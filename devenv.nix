@@ -1,10 +1,11 @@
 { pkgs, ... }:
 
 {
-  packages = [ pkgs.hello ];
+  packages = with pkgs; [
+    ripgrep
+    just
+  ];
 
-  scripts.say-bye.exec = ''
-    echo bye
-  '';
+  languages.rust.enable = true;
 }
 
