@@ -1,0 +1,2 @@
+validate:
+    cargo check   
